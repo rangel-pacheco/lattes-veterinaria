@@ -4,20 +4,35 @@ Ajuda docentes a identificar **onde registrar produções e atividades no Lattes
 
 Baseada no Orientador APCN 2026 e na Ficha de Avaliação 2025–2028, com distinção entre cursos acadêmicos e profissionais.
 
-## Instalação no Codex
+## Instalação rápida no Codex
 
-1. Clique em **Code → Download ZIP** e extraia o arquivo.
-2. Copie a pasta `lattes-veterinaria` — a que contém `SKILL.md` e `references` — para:
+No Codex com suporte a skills, peça:
 
-| Sistema | Pasta de destino |
+```text
+$skill-installer
+Instale a skill deste diretório do GitHub:
+https://github.com/rangel-pacheco/lattes-veterinaria/tree/main/lattes-veterinaria
+Após a instalação, verifique se aparece como $lattes-veterinaria.
+```
+
+A instalação copia arquivos; **não cria sincronização contínua** com o GitHub. O nome para invocar a skill é `$lattes-veterinaria`. Se não aparecer, reinicie o Codex e confira a instalação.
+
+### Alternativa: instalação manual
+
+Baixe o ZIP em **Code → Download ZIP**, extraia e copie somente a pasta `lattes-veterinaria`, contendo `SKILL.md` e `references/`:
+
+| Sistema | Diretório |
 |---|---|
-| Windows | `%USERPROFILE%\.agents\skills\` |
-| macOS ou Linux | `~/.agents/skills/` |
+| Windows | `%USERPROFILE%\\.agents\\skills\\` |
+| macOS/Linux | `~/.agents/skills/` |
 
-3. Se a pasta de destino não existir, crie-a. O resultado deve ser `skills/lattes-veterinaria/SKILL.md`.
-4. Selecione a skill no aplicativo ou invoque `$lattes-veterinaria` no Codex CLI/IDE. Se não aparecer, reinicie o Codex.
+A instalação em Claude Code pode seguir o mecanismo de skills compatível do aplicativo (por exemplo, pasta `~/.claude/skills/`); isso **não garante acesso ao navegador nem ao Lattes**. No ChatGPT, a disponibilidade de instalação de skills depende do ambiente e do plano.
 
-Para atualizar, substitua a pasta pela nova versão, preservando eventuais alterações pessoais. Veja a [documentação oficial de skills](https://learn.chatgpt.com/docs/build-skills). Em outros assistentes compatíveis, siga as instruções de importação do aplicativo.
+### Atualizar a skill instalada
+
+Peça ao Codex: `Compare minha skill lattes-veterinaria instalada com a versão mais recente do repositório GitHub. Mostre as diferenças e peça minha confirmação antes de atualizar os arquivos locais, preservando eventuais personalizações.`
+
+**Atenção:** isso é uma verificação sob demanda, não atualização automática em segundo plano. Antes de aplicar atualizações, revise as mudanças do repositório.
 
 ## Como usar
 
@@ -33,6 +48,27 @@ Exemplos:
 
 A resposta indica **cadastro provável, enquadramento, documentos comprobatórios e pendências**, com identificação das fontes. Você também pode usar o [modelo de portfólio](PORTFOLIO.md).
 
+## Cadastro assistido no Lattes (opcional)
+
+Com um Codex que disponibilize navegação no navegador, o pesquisador pode solicitar:
+
+```text
+$lattes-veterinaria
+Quero cadastrar as produções dos documentos que vou anexar.
+Primeiro verifique possíveis duplicidades, classifique cada item
+e mostre um plano de cadastro para minha aprovação.
+Se houver ferramentas de navegação adequadas e uso permitido,
+abra a Plataforma Lattes oficial para que eu faça o login pessoalmente.
+Após minha autorização, preencha e salve os registros aprovados,
+conferindo cada salvamento. NÃO envie o currículo para publicação.
+Ao final, apresente um relatório do que foi realmente salvo,
+do que já existia e das pendências.
+```
+
+O agente pode preencher formulários quando dispõe de ferramentas apropriadas e de autorização. **A skill em si não acessa sites nem é uma integração do CNPq.** A execução depende das condições de uso da Plataforma Lattes, das ferramentas disponíveis e da validação do pesquisador. Não compartilhe senha, código de autenticação ou token com a IA. O envio do currículo ao CNPq é sempre feito **exclusivamente pelo titular**.
+
+Consulte o [protocolo de cadastro assistido](lattes-veterinaria/references/protocolo-cadastro-assistido.md), que descreve autorização, análise de duplicidades, conferência, auditoria e condições para interromper a execução.
+
 ## O que diferencia esta skill
 
 - **[APCN-2026]** Considera os dez grupos de PTT da Veterinária e seus valores de referência para propostas profissionais.
@@ -45,7 +81,7 @@ As tabelas e explicações completas ficam nas [referências da skill](lattes-ve
 
 ## Limites
 
-A skill **não acessa nem edita seu Lattes**, não envia dados à Sucupira e não garante pontuação ou aprovação. ISBN, DOI e downloads, isoladamente, não comprovam impacto. A avaliação depende de autoria, período, aderência e evidências. Confirme documentos e edital vigentes antes da submissão.
+A skill, sozinha, **não acessa nem edita seu Lattes**. Em um agente com navegação autorizada, pode orientar o preenchimento e a gravação de registros; isso não constitui integração oficial do CNPq. A ferramenta não envia dados à Sucupira e não garante pontuação ou aprovação. ISBN, DOI e downloads, isoladamente, não comprovam impacto. A avaliação depende de autoria, período, aderência e evidências. Confirme documentos e edital vigentes antes da submissão.
 
 ## Fontes e créditos
 
@@ -53,4 +89,4 @@ A skill **não acessa nem edita seu Lattes**, não envia dados à Sucupira e nã
 
 Inspiração na proposta do repositório [jalinegm/lattes-apcn](https://github.com/jalinegm/lattes-apcn), que referencia a Oficina Lattes da Profa. Priscila Tavares. Esta adaptação utiliza critérios próprios da Medicina Veterinária, sem importar regras de outras áreas.
 
-Material independente de apoio. Atualização desta página: **28/10/2026**.
+Material independente de apoio. Atualização desta página: **11/11/2026**.
