@@ -1,6 +1,6 @@
 ---
 name: lattes-veterinaria
-description: Orienta docentes da área CAPES 24 Medicina Veterinária sobre ONDE cadastrar atividades, produção bibliográfica e técnica no Currículo Lattes e COMO documentar os dez grupos de PTT reconhecidos na APCN 2026. Use quando o docente perguntar onde lançar cartilha, livro, capítulo, patente, curso, oficina, software, relatório, protocolo, norma, parecer, serviço veterinário, evento, divulgação, projetos e orientações, ou solicitar prontidão do Lattes para APCN, sempre distinguindo mestrado/doutorado acadêmico/profissional e avaliação de entrada/permanência.
+description: Orienta docentes da área CAPES 24 Medicina Veterinária sobre ONDE cadastrar atividades, produção bibliográfica e técnica no Currículo Lattes e COMO documentar os dez grupos de PTT reconhecidos na APCN 2026. Use quando o docente perguntar onde lançar cartilha, livro, capítulo, patente, curso, oficina, software, relatório, protocolo, norma, parecer, serviço veterinário, evento, divulgação, projetos e orientações, ou solicitar prontidão do Lattes para APCN ou cadastro assistido com navegador autorizado, sempre distinguindo mestrado/doutorado acadêmico/profissional e avaliação de entrada/permanência.
 ---
 
 # Currículo Lattes → evidência e APCN da Medicina Veterinária
@@ -16,6 +16,7 @@ Dado um objeto, atividade ou comprovante de docente, devolva orientação de cad
 3. `references/qualificacao-ptt-quadrienal.md`: **Ficha de permanência** 2025–2028, Anexo 1, distinta do cálculo da APCN.
 4. `references/rastreabilidade.md`: dossiês comprobatórios e minimização de dados pessoais.
 5. `references/fontes-e-vigencia.md`: datas e URLs oficiais.
+6. `references/protocolo-cadastro-assistido.md`: procedimento opcional de operação assistida com navegação, autorização, verificação e publicação exclusivamente humana.
 
 Rotule os critérios como **[APCN-2026]**, **[Ficha-2025-2028]**, **[Oficina-repositório-Jaline]** (quando for exclusivamente prática de cadastro citada no projeto de origem), **[Inferência]** (mapeamento plausível que não é determinação da CAPES) ou **[Sem evidência]**. Não apresente regras da Oficina como normas CAPES de Medicina Veterinária.
 
@@ -29,6 +30,12 @@ Rotule os critérios como **[APCN-2026]**, **[Ficha-2025-2028]**, **[Oficina-rep
 6. Esclareça que o **destaque é de até cinco produções relevantes por docente, dos cinco anos anteriores à submissão**. Não congele a janela em 2021–2025: calcule segundo o ano de submissão e o edital correspondente.
 7. Faça checagem de **aderência** e rastreabilidade. Quantidade de downloads e ISBN/DOI ajudam a demonstrar existência/difusão, mas isoladamente não demonstram impacto nem atribuem estrato.
 8. Se solicitado, entregue tabela de portfólio com: docente; item; ano; local de cadastro; categoria APCN; valor de referência; aderência; evidência; situação; lacuna.
+
+## Modo operacional opcional: cadastro assistido no Lattes
+
+Quando o pesquisador pedir que o agente **cadastre diretamente** produções, leia e siga `references/protocolo-cadastro-assistido.md`, além das regras de classificação acima. Peça consentimento explícito para as ações; o titular faz o login na plataforma oficial sem compartilhar credenciais com o agente. A execução só é possível se o ambiente disponibilizar ferramenta de navegação adequada e se o uso estiver em conformidade com as condições aplicáveis à plataforma. Se isso não estiver assegurado, entregue registros preparados para inserção manual.
+
+Antes de cada inclusão, confirme o enquadramento e verifique possível duplicidade. Depois de salvar, confira o registro na interface. Registre resultados observados e pendências; **nunca publique nem envie o currículo ao CNPq**, ainda que o pesquisador peça o cadastramento. A publicação permanece exclusivamente sob responsabilidade do titular. A skill, isoladamente, não fornece acesso ao Lattes e não é uma integração oficial.
 
 ## Formato de resposta
 
@@ -49,4 +56,4 @@ Rotule os critérios como **[APCN-2026]**, **[Ficha-2025-2028]**, **[Oficina-rep
 - **Organização de evento** aparece expressamente na tabela veterinária (ao contrário de práticas relatadas em outras áreas). Há pontuação diferente para evento regional, nacional, internacional e virtual.
 - **Serviço de rotina** não se transforma automaticamente em PTT de impacto; exigem-se vínculo com a proposta, autoria/participação e evidência de método/resultado.
 - Não inferir que produto ausente da lista dos 10 está proibido: o Anexo 1 da Ficha permite consideração eventual de outros PTT mediante justificativa; isso não significa pontuação automática na APCN.
-- Nunca editar currículo ou afirmar que dados migraram para a Sucupira sem ferramenta e comprovação.
+- Nunca afirmar que o currículo foi editado, publicado ou que dados migraram para a Sucupira sem ferramenta, autorização e comprovação. Nunca efetuar o envio para publicação.
